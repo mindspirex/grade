@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 export default function Home() {
-  const [grades, setGrades] = useState([]);
-  const [credits, setCredits] = useState([]);
+  const [grades, setGrades] = useState<string[]>([]);
+  const [credits, setCredits] = useState<string[]>([]);
   const [grade, setGrade] = useState("");
   const [credit, setCredit] = useState("");
   const [cgpa, setCgpa] = useState(0);
